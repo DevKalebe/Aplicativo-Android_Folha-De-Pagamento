@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LeafPay</string>
+    <string name="title">Preencha as informações a seguir de acordo com o seu sálario...</string>
+    <string name="info_salary">Informe seu sálario:</string>
+    <string name="info_dependents">Número de dependentes:</string>
+    <string name="info_health_plan">Selecione seu plano de saúde:</string>
+    <string name="info_transport">É optante de vale transporte?</string>
+    <string name="info_meal">É optante de vale refeição?</string>
+    <string name="info_food">É optante de vale alimentação?</string>
+    <string name="calculate">Calcular</string>
+    <string name="validate_health">Informe o plano de saúde!</string>
+    <string name="validate_transport">Informe a opção do vale transporte!</string>
+    <string name="validate_feeding">Informe a opção do vale alimentação!</string>
+    <string name="validate_meal">Informe a opção do vale refeição!</string>
+    <string name="validate_salary">Informe um salário!</string>
+    <string name="validate_salary_negative">Informe um salário positivo!</string>
+    <string name="validate_dependents">Informe o número de dependentes!</string>
+    <string name="validate_dependents_negative">Informe um número de dependentes positivo!</string>
+    <string name="standard">Padrão</string>
+    <string name="basic">Básico</string>
+    <string name="master">Mestre</string>
+    <string name="yes">Sim</string>
+    <string name="no">Não</string>
+    <string name="super.">Super</string>
+    <string name="result_gross_salary">"Seu salário bruto: "</string>
+    <string name="result_health">"Plano de saúde: "</string>
+    <string name="result_transport">"Vale transporte: "</string>
+    <string name="result_food">"Vale alimentação: "</string>
+    <string name="result_meal">"Vale refeição: "</string>
+    <string name="result_net_salary">"Seu salário líquido: "</string>
+    <string name="result_discount">"Porcentagem de desconto: "</string>
+    <string name="result_inss">"INSS: "</string>
+    <string name="result_irrf">"IRRF: "</string>
+    <string name="recalculate">Calcular novamente</string>
+</resources>

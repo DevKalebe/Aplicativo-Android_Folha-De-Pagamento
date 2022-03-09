@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/prancheta"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="15dp"
+        android:paddingBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:src="@drawable/logo" />
+
+            <TextView
+                style="@style/style_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:lineHeight="22sp"
+                android:text="@string/title" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/style_til"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:endIconMode="clear_text"
+                app:prefixText="R$ ">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_salario"
+                    style="@style/style_tiet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/info_salary"
+                    android:inputType="numberDecimal" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/style_til"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:endIconMode="clear_text">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_dependentes"
+                    style="@style/style_tiet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/info_dependents"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <Spinner
+                android:id="@+id/spn_plano_saude"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:entries="@array/health_plan"
+                style="@style/style_et"
+                android:theme="@style/style_spinner" />
+
+            <Spinner
+                android:id="@+id/spn_transporte"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:entries="@array/yes_no_transport"
+                style="@style/style_et"
+                android:theme="@style/style_spinner"/>
+
+            <Spinner
+                android:id="@+id/spn_alimentacao"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:entries="@array/yes_no_feeding"
+                style="@style/style_et"
+                android:theme="@style/style_spinner"/>
+
+            <Spinner
+                android:id="@+id/spn_refeicao"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:entries="@array/yes_no_meal"
+                style="@style/style_et"
+                android:theme="@style/style_spinner"/>
+
+            <Button
+                android:id="@+id/btn_calcular"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="125dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/border"
+                android:fontFamily="@font/letters_for_learners"
+                android:gravity="center"
+                android:text="@string/calculate"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

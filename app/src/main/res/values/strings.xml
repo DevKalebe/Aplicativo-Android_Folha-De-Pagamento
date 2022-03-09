@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">LeafPay</string>
+    <string name="title">Fill in the following information according to your salary...</string>
+    <string name="info_salary">Enter your salary:</string>
+    <string name="info_dependents">Number of Dependents:</string>
+
+    <string name="info_health_plan">Select your health plan:</string>
+    <string name="standard">Standard</string>
+    <string name="basic">Basic</string>
+    <string name="super.">Super</string>
+    <string name="master">Master</string>
+
+    <string name="info_transport">Do you have a transport voucher?</string>
+    <string name="info_food">Do you have food stamps?</string>
+    <string name="info_meal">Do you have a meal voucher?</string>
+
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="calculate">Calculate</string>
+
+    <string name="validate_salary">Report a salary!</string>
+    <string name="validate_salary_negative">Report a positive salary!</string>
+    <string name="validate_dependents">Enter the number of dependents!</string>
+    <string name="validate_dependents_negative">Enter a positive number of dependents!</string>
+    <string name="validate_health">Inform the health plan!</string>
+    <string name="validate_transport">Inform the option of the transport voucher!</string>
+    <string name="validate_feeding">Inform the option of the food voucher!</string>
+    <string name="validate_meal">Inform the option of the meal voucher!</string>
+
+    <string name="result_gross_salary">"Your gross salary: "</string>
+    <string name="result_health">" Health plan:"</string>
+    <string name="result_transport">Transportation vouchers:</string>
+    <string name="result_food">"Food voucher: "</string>
+    <string name="result_meal">"Meal ticket: "</string>
+    <string name="result_inss">"INS: "</string>
+    <string name="result_irrf">"IRRF: "</string>
+    <string name="result_net_salary">"Your net salary: "</string>
+    <string name="result_discount">"Discount percentage: "</string>
+
+    <string-array name="health_plan">
+        <item>@string/info_health_plan</item>
+        <item>@string/standard</item>
+        <item>@string/basic</item>
+        <item>@string/super.</item>
+        <item>@string/master</item>
+    </string-array>
+
+    <string-array name="yes_no_transport">
+        <item>@string/info_transport</item>
+        <item>@string/yes</item>
+        <item>@string/no</item>
+    </string-array>
+
+    <string-array name="yes_no_feeding">
+        <item>@string/info_food</item>
+        <item>@string/yes</item>
+        <item>@string/no</item>
+    </string-array>
+
+    <string-array name="yes_no_meal">
+        <item>@string/info_meal</item>
+        <item>@string/yes</item>
+        <item>@string/no</item>
+    </string-array>
+    <string name="recalculate">Recalculate</string>
+</resources>

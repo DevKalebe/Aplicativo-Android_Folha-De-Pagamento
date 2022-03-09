@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/prancheta"
+    android:orientation="vertical"
+    tools:context=".activity.ResultadoActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="15dp"
+        android:paddingBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:src="@drawable/logo" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="45dp"
+                android:layout_marginEnd="30dp">
+                <TableRow style="@style/style_result_table_row">
+                    <TextView
+                        style="@style/style_result_tv_left"
+                        android:text="@string/result_gross_salary" />
+                    <TextView
+                        android:id="@+id/tv_salario_bruto"
+                        style="@style/style_result_tv_right" />
+                </TableRow>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="3dp"
+                    android:background="@color/green"
+                    />
+                <TableRow style="@style/style_result_table_row">
+                    <TextView
+                        style="@style/style_result_tv_left"
+                        android:text="@string/result_health"/>
+                    <TextView
+                        android:id="@+id/tv_plano_saude"
+                        style="@style/style_result_tv_right" />
+                </TableRow>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="3dp"
+                    android:background="@color/green" />
+                <TableRow style="@style/style_result_table_row">
+                    <TextView
+                        style="@style/style_result_tv_left"
+                        android:text="@string/result_transport"/>
+                    <TextView
+                        android:id="@+id/tv_transporte"
+                        style="@style/style_result_tv_right" />
+                </TableRow>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="3dp"
+                    android:background="@color/green" />
+                <TableRow style="@style/style_result_table_row">
+                    <TextView
+                        style="@style/style_result_tv_left"
+                        android:text="@string/result_food"/>
+                    <TextView
+                        android:id="@+id/tv_alimentacao"
+                        style="@style/style_result_tv_right" />
+                </TableRow>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="3dp"
+                    android:background="@color/green" />
+                <TableRow style="@style/style_result_table_row">
+                    <TextView
+                        style="@style/style_result_tv_left"
+                        android:text="@string/result_meal"/>
+                    <TextView
+                        android:id="@+id/tv_refeicao"
+                        style="@style/style_result_tv_right" />
+                </TableRow>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="3dp"
+                    android:background="@color/green" />
+                <TableRow style="@style/style_result_table_row">
+                    <TextView
+                        style="@style/style_result_tv_left"
+                        android:text="@string/result_inss"/>
+                    <TextView
+                        android:id="@+id/tv_inss"
+                        style="@style/style_result_tv_right" />
+                </TableRow>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="3dp"
+                    android:background="@color/green" />
+                <TableRow style="@style/style_result_table_row">
+                    <TextView
+                        style="@style/style_result_tv_left"
+                        android:text="@string/result_irrf"/>
+                    <TextView
+                        android:id="@+id/tv_irrf"
+                        style="@style/style_result_tv_right" />
+                </TableRow>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="3dp"
+                    android:background="@color/green" />
+                <TableRow style="@style/style_result_table_row">
+                    <TextView
+                        style="@style/style_result_tv_left"
+                        android:text="@string/result_net_salary"/>
+                    <TextView
+                        android:id="@+id/tv_salario_liquido"
+                        style="@style/style_result_tv_right" />
+                </TableRow>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="3dp"
+                    android:background="@color/green" />
+                <TableRow style="@style/style_result_table_row">
+                    <TextView
+                        style="@style/style_result_tv_left"
+                        android:text="@string/result_discount"/>
+                    <TextView
+                        android:id="@+id/tv_porcentagem_desconto"
+                        style="@style/style_result_tv_right" />
+                </TableRow>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="3dp"
+                    android:background="@color/green" />
+            </TableLayout>
+            <Button
+                android:id="@+id/btn_recalcular"
+                android:layout_width="150dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="125dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/border"
+                android:fontFamily="@font/letters_for_learners"
+                android:gravity="center"
+                android:text="@string/recalculate"
+                android:textSize="20sp" />
+
+<!--            <EditText-->
+<!--                android:id="@+id/editTextTextPersonName"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:ems="10"-->
+<!--                android:inputType="textPersonName"-->
+<!--                android:text="Name" />-->
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
